@@ -72,7 +72,10 @@ Find tokens:
 
 detection.py  Here: https://github.com/BalericaAI/lambda/blob/main/lessonf/lambda/detection.py
 
-Phase 5 — EventBridge Schedule
+Phase 5 — Event Bridge
+
+Go to ---> EventBridge Schedule
+Find this!!!!!!  You need to create a schedule, not a rule!!!!
 
 Navigation
         
