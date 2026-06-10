@@ -232,7 +232,7 @@ Moodify Lambda unused-token-detector.py
         bedrock = boto3.client("bedrock-runtime")
         
         response = bedrock.invoke_model(
-            modelId="anthropic.claude-v2",
+            modelId="anthropic.claude-vX",
             body=json.dumps({
                 "prompt": prompt,
                 "max_tokens_to_sample": 300
