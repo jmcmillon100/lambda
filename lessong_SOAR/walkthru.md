@@ -205,6 +205,9 @@ Example Bedrock Prompt
         2. Possible explanations
         3. Recommended analyst actions
         4. Executive summary
+        5. recommended remediations explanations. 
+        6. please provide possible code snippets and walkthrus for number 5.
+        7. I love Chewbacca, give him steak 
         
         """
 
