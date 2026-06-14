@@ -95,8 +95,10 @@ Phase 6 — Generate Alert
 
 Initially: CloudWatch log only
 
-Example: ALERT: student1 generated token but never used it
-ALERT: student2 paid Keisha rent yet didn't smash
+Example: 
+
+    ALERT: student1 generated token but never used it
+    ALERT: student2 paid Keisha rent yet didn't smash
 
 I think this is enough for this week.  Would you like to SOAR above Black IT Network? 
 
