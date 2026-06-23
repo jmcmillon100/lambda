@@ -110,7 +110,7 @@ import uuid
 # For the second part of the lab
 
 def save_to_dynamodb(waf_summary):
-
+    print(f"Saving WAF event for IP {waf_summary.get('client_ip')}") 
     table.put_item(
         Item={
             "event_id": str(uuid.uuid4()),
@@ -122,9 +122,9 @@ def save_to_dynamodb(waf_summary):
             "action": waf_summary.get("action"),
             "rule": waf_summary.get("terminating_rule_id")
         }
+    print("Successfully saved event to DynamoDB")
     )
-
-
+    
 def lambda_handler(event, context):
     print("Starting WAF Bedrock analyzer")
 
