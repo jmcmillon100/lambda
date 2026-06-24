@@ -10,6 +10,7 @@ this is for both parts of the lab
               "logs:FilterLogEvents"
             ],
             "Resource": "*"
+            # later use "Resource": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/waf/*"
           },
           {
             "Effect": "Allow",
@@ -18,10 +19,21 @@ this is for both parts of the lab
             ],
             "Resource": "*"
           },
+            #Later
+            #{
+             # "Effect": "Allow",
+             # "Action": [
+             #   "events:PutEvents"
+              # ],
+            # "Resource": "*"
+            #},
           {
             "Effect": "Allow",
             "Action": [
               "dynamodb:PutItem"
+              "dynamodb:GetItem",
+              "dynamodb:Query",
+              "dynamodb:Scan"
             ],
             "Resource": "arn:aws:dynamodb:<region>:<account-id>:table/waf-events"
           }
